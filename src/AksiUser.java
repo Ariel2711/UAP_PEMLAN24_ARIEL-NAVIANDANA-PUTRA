@@ -53,10 +53,9 @@ public class AksiUser extends Aksi {
         for (Map.Entry<String, Film> entry : Film.getFilms().entrySet()) {
             Film film = entry.getValue();
 
-            if (film.getName() == namaFilm) {
+            if (film.getName().equals(namaFilm)) {
                 selectedFilm = film;
                 isExist = true;
-                break;
             }   
         }
 
